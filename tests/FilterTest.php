@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class FilterTest extends TestCase
 {
-    public function testAppend() : void
+    public function testAppend(): void
     {
         $stream = $this->createStream('<b>HELLO WORLD</b>');
 
@@ -20,7 +20,7 @@ class FilterTest extends TestCase
         \fclose($stream);
     }
 
-    public function testPrependAfterAppend() : void
+    public function testPrependAfterAppend(): void
     {
         $stream = $this->createStream();
 
@@ -41,7 +41,7 @@ class FilterTest extends TestCase
         \fclose($stream);
     }
 
-    public function testAppendMultipleFilters() : void
+    public function testAppendMultipleFilters(): void
     {
         $stream = $this->createStream('<b>HELLO WORLD</b>');
 
@@ -58,7 +58,7 @@ class FilterTest extends TestCase
         \fclose($stream);
     }
 
-    public function testAppendUsingClassAsCallback() : void
+    public function testAppendUsingClassAsCallback(): void
     {
         $stream = $this->createStream('<b>HELLO WORLD</b>');
 
@@ -74,7 +74,7 @@ class FilterTest extends TestCase
         \fclose($stream);
     }
 
-    public function testAppendBuffer() : void
+    public function testAppendBuffer(): void
     {
         $stream = $this->createStream();
 
@@ -98,7 +98,7 @@ class FilterTest extends TestCase
         \fclose($stream);
     }
 
-    public function testRemoveFilter() : void
+    public function testRemoveFilter(): void
     {
         $stream = $this->createStream();
 

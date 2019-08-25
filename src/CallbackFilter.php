@@ -6,7 +6,7 @@ namespace SimpleStreamFilter;
 
 final class CallbackFilter extends \php_user_filter
 {
-    public function filter($in, $out, &$consumed, $closing) : int
+    public function filter($in, $out, &$consumed, $closing): int
     {
         $bucket = \stream_bucket_make_writeable($in);
 

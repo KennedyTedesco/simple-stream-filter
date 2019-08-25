@@ -9,9 +9,6 @@ return PhpCsFixer\Config::create()
     ->setRules([
         '@PSR2' => true,
         'array_syntax' => ['syntax' => 'short'],
-        'ordered_imports' => ['sortAlgorithm' => 'length'],
-        'no_unused_imports' => true,
-        'native_function_invocation' => true,
         'is_null' => true,
         'list_syntax' => [
             'syntax' => 'short',
@@ -23,5 +20,8 @@ return PhpCsFixer\Config::create()
         'native_constant_invocation' => true,
         'native_function_casing' => true,
         'new_with_braces' => true,
+        'no_unused_imports' => true,
+        'ordered_imports' => ['sortAlgorithm' => 'length'],
+        'return_type_declaration' => ['space_before' => 'none'],
     ])
     ->setFinder($finder);

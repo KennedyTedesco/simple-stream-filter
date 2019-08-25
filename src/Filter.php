@@ -49,7 +49,7 @@ final class Filter
     /**
      * @param resource $filter
      */
-    public static function remove($filter) : void
+    public static function remove($filter): void
     {
         self::assertResource($filter);
 
@@ -58,7 +58,7 @@ final class Filter
         }
     }
 
-    private static function registeredFilter() : string
+    private static function registeredFilter(): string
     {
         if (self::$callbackFilterName === null) {
             $return = \stream_filter_register(
@@ -74,7 +74,7 @@ final class Filter
         return self::$callbackFilterName;
     }
 
-    private static function assertResource($resource) : void
+    private static function assertResource($resource): void
     {
         if (!\is_resource($resource)) {
             throw new \InvalidArgumentException('Must be a valid resource.');
