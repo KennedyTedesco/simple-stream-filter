@@ -9,15 +9,15 @@ Painless stream filtering in PHP. The Stream Filter API it's a bit obscure. What
 
 use KennedyTedesco\SimpleStreamFilter\Filter;
 
-$stream = fopen('file.txt', 'rb');
+$stream = \fopen('file.txt', 'rb');
 
 Filter::append($stream, static function ($chunk = null) {
     return \strip_tags($chunk);
 });
 
-fpassthru($stream);
+\fpassthru($stream);
 
-fclose($stream);
+\fclose($stream);
 ```
 
 Or, if you want to:
@@ -35,13 +35,13 @@ final class StripTagsFilter
     }
 }
 
-$stream = fopen('file.txt', 'rb');
+$stream = \fopen('file.txt', 'rb');
 
 Filter::append($stream, new StripTagsFilter);
 
-fpassthru($stream);
+\fpassthru($stream);
 
-fclose($stream);
+\fclose($stream);
 ```
 
 ## Install
