@@ -1,4 +1,4 @@
-# kennedytedesco/simple-stream-filter
+# kennedytedesco/simple-stream-filter [![Build Status](https://travis-ci.org/KennedyTedesco/simple-stream-filter.svg?branch=master)](https://travis-ci.org/KennedyTedesco/simple-stream-filter)
 
 Painless stream filtering in PHP. The Stream Filter API it's a bit obscure. What about making a custom filter using just an anonymous function?
 
