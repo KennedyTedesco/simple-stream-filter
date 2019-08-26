@@ -2,8 +2,8 @@
 
 namespace Tests;
 
-use SimpleStreamFilter\Filter;
 use PHPUnit\Framework\TestCase;
+use KennedyTedesco\SimpleStreamFilter\Filter;
 
 class FilterTest extends TestCase
 {

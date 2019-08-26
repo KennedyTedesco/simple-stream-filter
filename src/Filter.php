@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SimpleStreamFilter;
+namespace KennedyTedesco\SimpleStreamFilter;
 
 final class Filter
 {
