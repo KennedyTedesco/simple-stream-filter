@@ -19,6 +19,7 @@ return PhpCsFixer\Config::create()
         'modernize_types_casting' => true,
         'native_constant_invocation' => true,
         'native_function_casing' => true,
+        'native_function_invocation' => true,
         'new_with_braces' => true,
         'no_unused_imports' => true,
         'ordered_imports' => ['sortAlgorithm' => 'length'],
