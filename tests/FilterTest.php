@@ -20,6 +20,17 @@ class FilterTest extends TestCase
         \fclose($stream);
     }
 
+    public function testAppendUsingNativeFunction(): void
+    {
+        $stream = $this->createStream('hello world');
+
+        Filter::append($stream, 'strtoupper');
+
+        $this->assertEquals('HELLO WORLD', \fgets($stream));
+
+        \fclose($stream);
+    }
+
     public function testPrependAfterAppend(): void
     {
         $stream = $this->createStream();
