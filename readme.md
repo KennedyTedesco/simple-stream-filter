@@ -20,6 +20,30 @@ fpassthru($stream);
 fclose($stream);
 ```
 
+Or, if you want to:
+
+```php
+<?php
+
+use SimpleStreamFilter\Filter;
+
+final class StripTagsFilter
+{
+    public function __invoke($chunk)
+    {
+        return \strip_tags($chunk);
+    }
+}
+
+$stream = fopen('file.txt', 'rb');
+
+Filter::append($stream, new StripTagsFilter);
+
+fpassthru($stream);
+
+fclose($stream);
+```
+
 ## Install
 
 PHP 7.2 or greater required.
