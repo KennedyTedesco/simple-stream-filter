@@ -49,7 +49,7 @@ fclose($stream);
 PHP 7.2 or greater required.
 
 ```bash
-$ composer require kennedytedesco/simple-stream-filter:^0.2
+$ composer require kennedytedesco/simple-stream-filter
 ```
 
 ## Credits
