@@ -52,6 +52,6 @@ PHP 7.2 or greater required.
 $ composer require kennedytedesco/simple-stream-filter:^0.2
 ```
 
-### Credits
+## Credits
 
 This project is like a lightweight version of the awesome [php-stream-filter](https://github.com/clue/php-stream-filter).
