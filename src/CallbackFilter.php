@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace SimpleStreamFilter;
 
-final class CallbackFilter extends \php_user_filter
+final class CallbackFilter extends \PHP_User_Filter
 {
     public function filter($in, $out, &$consumed, $closing): int
     {
