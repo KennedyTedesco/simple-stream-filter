@@ -7,7 +7,7 @@ Painless stream filtering in PHP. The Stream Filter API it's a bit obscure. What
 ```php
 <?php
 
-use SimpleStreamFilter\Filter;
+use KennedyTedesco\SimpleStreamFilter\Filter;
 
 $stream = fopen('file.txt', 'rb');
 
@@ -25,7 +25,7 @@ Or, if you want to:
 ```php
 <?php
 
-use SimpleStreamFilter\Filter;
+use KennedyTedesco\SimpleStreamFilter\Filter;
 
 final class StripTagsFilter
 {
